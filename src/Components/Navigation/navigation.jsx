@@ -13,7 +13,7 @@ const MENU_ITEMS = [
   "Bread & Bakery",
 ];
 const Navigation = () => {
-  const mappedItems = MENU_ITEMS.map((items) => <li>{items}</li>); 
+  const mappedItems = MENU_ITEMS.map((items) => <li key={Math.random()*2}>{items}</li>); 
   return (
     <Fragment>
       <aside className="aside-menu">
