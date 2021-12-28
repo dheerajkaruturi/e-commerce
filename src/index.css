@@ -16,3 +16,6 @@ body {
 .btn{
   border-radius: 0rem;
 }
+.btn:focus{
+  box-shadow: none !important;
+}

@@ -44,7 +44,8 @@ const header = () => {
           </form>
           <div className="navbar-group__icon">
             <div className="icon__set">
-              <i className="icon ion-md-cart"></i> 
+              <i className="icon ion-md-cart"></i>
+              <span className="number__badge">0</span>
               <i className="icon ion-md-mail"></i>
               <i className="icon ion-md-person"></i>
             </div>

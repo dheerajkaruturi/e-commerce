@@ -2,10 +2,12 @@ import React from "react";
 import "./main.css";
 import sale_picture from "../../assets/sale_photo.jpg";
 import utensils from "../../assets/utensels.jpg";
-import clothesSale from "../../assets/clothes-sale.jpg";
+import lays from '../../assets/lays-packet-potato-chips.jpg'
 import petFood from "../../assets/pet-food.jpg";
 import SaleAnnouncementCard from "../HelperComponents/SaleAnnouncementCards/SaleAnnouncementCard";
 import RecommendedItem from "../HelperComponents/HomepageRecomendedList/recommendedItem";
+import Bakery from "../ItemsCategories/Bakery";
+import PetFood from "../ItemsCategories/PetFood";
 
 const main = () => {
   return (
@@ -16,8 +18,8 @@ const main = () => {
       <div className="card__container">
         <SaleAnnouncementCard offerImage={utensils} cardHeading="kitchen" />
         <SaleAnnouncementCard
-          offerImage={clothesSale}
-          cardHeading="fashion up"
+          offerImage={lays}
+          cardHeading="Snack Items"
         />
         <SaleAnnouncementCard
           offerImage={petFood}
@@ -26,7 +28,9 @@ const main = () => {
       </div>
       <div className="items-list">
         <h3>Recommended Items</h3>
-       <RecommendedItem />
+        <RecommendedItem />
+        <Bakery />
+        <PetFood />
       </div>
     </section>
   );

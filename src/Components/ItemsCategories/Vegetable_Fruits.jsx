@@ -1,12 +1,12 @@
 import { Fragment } from "react";
-import "./recommendedItem.css";
-import { HOME_PAGE_ITEMS } from "../../../data";
+import { VEGETABLES_FRUITS } from "../../data";
+import "./itemscategory.css";
 
-const recommendedItem = () => {
+const Vegetable_Fruits = () => {
   return (
     <Fragment>
-      {HOME_PAGE_ITEMS.map((items) => (
-        <div className="list_display">
+      {VEGETABLES_FRUITS.map((items) => (
+        <div div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">
             <p className="item_name">{items.title}</p>
@@ -23,9 +23,7 @@ const recommendedItem = () => {
           </div>
           <div className="add__cart">
             <button className="btn add btn-sm btn-outline-warning">+</button>
-            <button className="btn btn-sm btn-success">
-              Add to Cart
-            </button>
+            <button className="btn btn-sm btn-success">Add to Cart</button>
             <button className="btn minus btn-sm btn-outline-danger">-</button>
           </div>
         </div>
@@ -34,4 +32,4 @@ const recommendedItem = () => {
   );
 };
 
-export default recommendedItem;
+export default Vegetable_Fruits;

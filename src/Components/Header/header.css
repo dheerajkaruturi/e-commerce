@@ -1,4 +1,3 @@
-
 .navbar-brand {
   font-size: 1.7rem;
   font-weight: 600;
@@ -33,8 +32,19 @@
 .navbar-group__icon {
   font-size: 1.75rem;
   margin: 0rem 1.5rem;
+  position: relative;
 }
 .icon__set i {
   margin: 0.75rem;
   cursor: pointer;
+}
+.number__badge {
+  position: absolute;
+  font-size: 0.75rem;
+  background-color: #fb641b;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 5px;
+  top: -0.35rem;
+  right: 6rem;
 }

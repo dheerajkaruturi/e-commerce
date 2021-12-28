@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import Header from "../Header/header";
 import Navigation from "../Navigation/navigation";
-import Main from "../Main/main";
+import ShoppingCart from "../ShoppingCart/shoppingCart";
+//import Main from "../Main/main";
 import "./home.css";
 
 const home = () => {
@@ -9,7 +10,8 @@ const home = () => {
     <Fragment>
       <Header></Header>
       <Navigation></Navigation>
-      <Main></Main>
+      {/* <Main></Main> */}
+      <ShoppingCart />
     </Fragment>
   );
 };
