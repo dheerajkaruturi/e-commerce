@@ -9,12 +9,7 @@ const ShoppingCart = () => {
     setCount((counter) => counter + 1);
   };
   const removefromCartHandler = function () {
-    if (count === 0) {
-        setCount(count);
-        return
-    } else {
-        setCount((counter) => counter - 1)
-    }
+    count === 0 ? setCount(count) : setCount((counter) => counter - 1);
   };
   return (
     <Fragment>
