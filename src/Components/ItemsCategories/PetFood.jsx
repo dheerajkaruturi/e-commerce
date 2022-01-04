@@ -1,10 +1,13 @@
 import { Fragment } from "react";
-import { PET_FOOD } from "../../data";
+import { ITEMS_ARRAY } from "../../data";
 import "./itemscategory.css";
 const PetFood = () => {
+  const filtered_petFood = ITEMS_ARRAY.filter(
+    (items) => items.name === "PET_FOOD"
+  );
   return (
     <Fragment>
-      {PET_FOOD.map((items) => (
+      {filtered_petFood.map((items) => (
         <div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">

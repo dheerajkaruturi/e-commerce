@@ -1,11 +1,14 @@
 import React, { Fragment } from "react";
 import "./itemscategory.css";
-import { HOUSE_HOLDS } from "../../data";
+import { ITEMS_ARRAY } from "../../data";
 
 const HouseHold = () => {
+  const filtered_houseHold = ITEMS_ARRAY.filter(
+    (items) => items.name === "HOUSE_HOLDS"
+  );
   return (
     <Fragment>
-      {HOUSE_HOLDS.map((items) => (
+      {filtered_houseHold.map((items) => (
         <div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">

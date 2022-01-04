@@ -1,10 +1,13 @@
 import { Fragment } from "react";
-import { BEVERAGES } from "../../data";
+import { ITEMS_ARRAY } from "../../data";
 import "./itemscategory.css";
 const Beverages = () => {
+  const filtered_beverages = ITEMS_ARRAY.filter(
+    (items) => items.name === "BEVERAGES"
+  );
   return (
     <Fragment>
-      {BEVERAGES.map((items) => (
+      {filtered_beverages.map((items) => (
         <div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">
