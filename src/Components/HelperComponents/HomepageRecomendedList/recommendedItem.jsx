@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import "./recommendedItem.css";
-import { HOME_PAGE_ITEMS } from "../../../data";
+import { ITEMS_ARRAY } from "../../../data";
 
 const recommendedItem = () => {
+  const filtered_homepageItems = ITEMS_ARRAY.filter((items) => items.name === 'HOME_PAGE_ITEMS');
   return (
     <Fragment>
-      {HOME_PAGE_ITEMS.map((items) => (
+      {filtered_homepageItems.map((items) => (
         <div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">
@@ -22,11 +23,12 @@ const recommendedItem = () => {
             </p>
           </div>
           <div className="add__cart">
-            <button className="btn add btn-sm btn-outline-warning">+</button>
             <button className="btn btn-sm btn-success">
               Add to Cart
+              <span>
+                <i className="icon ion-md-cart" style={{marginLeft:'0.5rem'}}></i>
+              </span>
             </button>
-            <button className="btn minus btn-sm btn-outline-danger">-</button>
           </div>
         </div>
       ))}

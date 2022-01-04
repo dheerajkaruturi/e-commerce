@@ -51,3 +51,18 @@
   border: none;
   background-color: #fb641b;
 }
+.bill_summary{
+  border: 1px solid lightgrey;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5rem;
+  
+
+}
+.bill_summary h4{
+  text-transform: capitalize;
+  font-size: 1.75rem;
+  text-align: center;
+  font-weight: 700;
+}
+

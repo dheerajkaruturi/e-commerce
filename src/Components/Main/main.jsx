@@ -6,8 +6,7 @@ import lays from '../../assets/lays-packet-potato-chips.jpg'
 import petFood from "../../assets/pet-food.jpg";
 import SaleAnnouncementCard from "../HelperComponents/SaleAnnouncementCards/SaleAnnouncementCard";
 import RecommendedItem from "../HelperComponents/HomepageRecomendedList/recommendedItem";
-import Bakery from "../ItemsCategories/Bakery";
-import PetFood from "../ItemsCategories/PetFood";
+
 
 const main = () => {
   return (
@@ -29,8 +28,7 @@ const main = () => {
       <div className="items-list">
         <h3>Recommended Items</h3>
         <RecommendedItem />
-        <Bakery />
-        <PetFood />
+      
       </div>
     </section>
   );

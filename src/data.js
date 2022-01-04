@@ -12,9 +12,10 @@ import thumsUp from "./assets/thums-up.jpg";
 import frenchFries from './assets/french-fries.jpg';
 import bread from './assets/bakery-bread.jpg';
 
-export const HOME_PAGE_ITEMS = [
+export const ITEMS_ARRAY = [
   {
     id: 1,
+    name: "HOME_PAGE_ITEMS",
     img: petFood,
     title: "Chicken Treats",
     price: "150",
@@ -24,6 +25,7 @@ export const HOME_PAGE_ITEMS = [
   },
   {
     id: 2,
+    name: "HOME_PAGE_ITEMS",
     img: plantPot,
     title: "Plant Pot",
     price: "100",
@@ -33,6 +35,7 @@ export const HOME_PAGE_ITEMS = [
   },
   {
     id: 3,
+    name: "HOME_PAGE_ITEMS",
     img: macBook,
     title: "MacBook Pro",
     price: "90000",
@@ -42,6 +45,7 @@ export const HOME_PAGE_ITEMS = [
   },
   {
     id: 4,
+    name: "HOME_PAGE_ITEMS",
     img: utensils,
     title: "Cooking Utensils",
     price: "3000",
@@ -49,11 +53,9 @@ export const HOME_PAGE_ITEMS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
   },
-];
-
-export const BRANDED_FOODS = [
   {
-    id: 1,
+    id: 5,
+    name: "BRANDED_FOODS",
     img: "./assets/Lays-Masala-Chips.jpg",
     title: "Lays Potato Chips",
     description:
@@ -62,7 +64,8 @@ export const BRANDED_FOODS = [
     rating: "4.5",
   },
   {
-    id: 2,
+    id: 6,
+    name: "BRANDED_FOODS",
     img: "./assets/lays-packet-potato-chips.jpg",
     title: "Lays Potato Chips",
     description:
@@ -71,7 +74,8 @@ export const BRANDED_FOODS = [
     rating: "4.5",
   },
   {
-    id: 3,
+    id: 7,
+    name: "BRANDED_FOODS",
     img: "./assets/maggi.jpg",
     title: "Maggi",
     description:
@@ -80,7 +84,8 @@ export const BRANDED_FOODS = [
     rating: "4.5",
   },
   {
-    id: 4,
+    id: 8,
+    name: "BRANDED_FOODS",
     img: "./assets/bakery-bread.jpg",
     title: "Packed Bread",
     description:
@@ -88,11 +93,9 @@ export const BRANDED_FOODS = [
     cost: "40",
     rating: "4.5",
   },
-];
-
-export const HOUSE_HOLDS = [
   {
-    id: 1,
+    id: 9,
+    name: "HOUSE_HOLDS",
     img: vim,
     title: "Vim Dish Washer",
     description:
@@ -101,7 +104,8 @@ export const HOUSE_HOLDS = [
     rating: "4.5",
   },
   {
-    id: 2,
+    id: 10,
+    name: "HOUSE_HOLDS",
     img: utensils,
     title: "Cooking Utensils",
     price: "3000",
@@ -109,11 +113,9 @@ export const HOUSE_HOLDS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
   },
-];
-
-export const VEGETABLES_FRUITS = [
   {
-    id: 1,
+    id: 11,
+    name: "VEGETABLES_FRUITS",
     img: mango,
     title: "Mango",
     price: "100",
@@ -122,7 +124,8 @@ export const VEGETABLES_FRUITS = [
     rating: "4.5",
   },
   {
-    id: 2,
+    id: 12,
+    name: "VEGETABLES_FRUITS",
     img: gauva,
     title: "Gauva",
     price: "100",
@@ -131,7 +134,8 @@ export const VEGETABLES_FRUITS = [
     rating: "4.5",
   },
   {
-    id: 3,
+    id: 13,
+    name: "VEGETABLES_FRUITS",
     img: tomato,
     title: "Tomato",
     price: "100",
@@ -140,7 +144,8 @@ export const VEGETABLES_FRUITS = [
     rating: "4.5",
   },
   {
-    id: 4,
+    id: 14,
+    name: "VEGETABLES_FRUITS",
     img: chilli,
     title: "Chilli",
     price: "100",
@@ -148,10 +153,9 @@ export const VEGETABLES_FRUITS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
   },
-];
-export const KITCHEN = [
   {
-    id: 1,
+    id: 15,
+    name: "KITCHEN",
     img: utensils,
     title: "Utensils",
     price: "1000",
@@ -159,10 +163,9 @@ export const KITCHEN = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "3.5",
   },
-];
-export const BEVERAGES = [
   {
-    id: 1,
+    id: 16,
+    name: "BEVERAGES",
     img: pepsi,
     title: "Pepsi",
     price: "100",
@@ -171,7 +174,8 @@ export const BEVERAGES = [
     rating: "4.5",
   },
   {
-    id: 2,
+    id: 17,
+    name: "BEVERAGES",
     img: thumsUp,
     title: "Thums Up",
     price: "100",
@@ -179,10 +183,9 @@ export const BEVERAGES = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
   },
-];
-export const PET_FOOD = [
   {
-    id: 1,
+    id: 18,
+    name: "PET_FOOD",
     img: petFood,
     title: "Chicken Treats",
     price: "100",
@@ -190,10 +193,9 @@ export const PET_FOOD = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
   },
-];
-export const FROZEN_FOOD = [
   {
-    id: 1,
+    id: 19,
+    name: "FROZEN_FOOD",
     img: frenchFries,
     title: "French Fries",
     price: "500",
@@ -201,10 +203,9 @@ export const FROZEN_FOOD = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
   },
-];
-export const BREAD_BAKERY = [
   {
-    id: 1,
+    id: 20,
+    name:'BREAD_BAKERY',
     img: bread,
     title: "Milk Bread",
     price: "50",

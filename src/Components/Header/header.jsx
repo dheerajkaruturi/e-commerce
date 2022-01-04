@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import CartIcon from "../Cart/CartIcon";
 import "./header.css";
 
 const header = () => {
@@ -44,8 +45,7 @@ const header = () => {
           </form>
           <div className="navbar-group__icon">
             <div className="icon__set">
-              <i className="icon ion-md-cart"></i>
-              <span className="number__badge">0</span>
+             <CartIcon />
               <i className="icon ion-md-mail"></i>
               <i className="icon ion-md-person"></i>
             </div>
