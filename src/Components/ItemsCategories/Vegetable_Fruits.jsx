@@ -1,9 +1,9 @@
-import { Fragment } from "react";
-import { ITEMS_ARRAY } from "../../data";
+import { Fragment, useContext } from "react";
+import DataContext from "../../data";
 import "./itemscategory.css";
 
 const Vegetable_Fruits = () => {
-  const filtered_veg = ITEMS_ARRAY.filter(
+  const filtered_veg = useContext(DataContext).filter(
     (items) => items.name === "VEGETABLES_FRUITS"
   );
   return (

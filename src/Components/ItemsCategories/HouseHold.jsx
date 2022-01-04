@@ -1,14 +1,14 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import "./itemscategory.css";
-import { ITEMS_ARRAY } from "../../data";
+import DataContext from "../../data";
 
 const HouseHold = () => {
-  const filtered_houseHold = ITEMS_ARRAY.filter(
+  const data = useContext(DataContext).filter(
     (items) => items.name === "HOUSE_HOLDS"
   );
   return (
     <Fragment>
-      {filtered_houseHold.map((items) => (
+      {data.map((items) => (
         <div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">

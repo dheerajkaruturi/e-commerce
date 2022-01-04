@@ -8,8 +8,8 @@ import "./home.css";
 const home = () => {
   return (
     <Fragment>
-      <Header></Header>
-      <Navigation></Navigation>
+      <Header />
+      <Navigation />
       <Main />
       {/* <ShoppingCart /> */}
     </Fragment>

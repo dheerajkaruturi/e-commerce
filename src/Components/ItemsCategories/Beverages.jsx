@@ -1,13 +1,13 @@
-import { Fragment } from "react";
-import { ITEMS_ARRAY } from "../../data";
+import { Fragment, useContext } from "react";
+import DataContext from "../../data";
 import "./itemscategory.css";
 const Beverages = () => {
-  const filtered_beverages = ITEMS_ARRAY.filter(
+  const data = useContext(DataContext).filter(
     (items) => items.name === "BEVERAGES"
   );
   return (
     <Fragment>
-      {filtered_beverages.map((items) => (
+      {data.map((items) => (
         <div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">

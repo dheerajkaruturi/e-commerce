@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import {HOME_PAGE_ITEMS} from '../../data'
+import {ITEMS_ARRAY} from '../../data'
 
 const cart = (props) => {
-
-    const cartItems = HOME_PAGE_ITEMS.map((items) => (
+const filtered_cartItems = ITEMS_ARRAY.filter((items)=>items.name==='HOME_PAGE_ITEMS')
+    const cartItems = filtered_cartItems.map((items) => (
       <div className="cart-item_details">
         <div className="item_img">
           <img src={items.img} alt="shoe" />

@@ -1,11 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Home from "./Components/Home/home";
+import DataContext, { ITEMS_ARRAY }  from "./data";
 
 const App = () => {
   return (
-    <Fragment>
+    <DataContext.Provider value={ITEMS_ARRAY}>
       <Home></Home>
-    </Fragment>
+    </DataContext.Provider>
   );
 };
 

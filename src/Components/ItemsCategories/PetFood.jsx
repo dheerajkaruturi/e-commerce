@@ -1,8 +1,8 @@
 import { Fragment } from "react";
-import { ITEMS_ARRAY } from "../../data";
+import DataContext from "../../data";
 import "./itemscategory.css";
 const PetFood = () => {
-  const filtered_petFood = ITEMS_ARRAY.filter(
+  const filtered_petFood = useContext(DataContext).filter(
     (items) => items.name === "PET_FOOD"
   );
   return (

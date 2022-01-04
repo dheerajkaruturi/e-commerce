@@ -1,3 +1,5 @@
+import React from "react";
+
 import petFood from "./assets/pet-food.jpg";
 import plantPot from "./assets/plant_pot.jpg";
 import macBook from "./assets/laptop.jpg";
@@ -9,8 +11,8 @@ import chilli from "./assets/red-chilli.jpg";
 import tomato from "./assets/Tomato.jpg";
 import pepsi from "./assets/pepsi.jpg";
 import thumsUp from "./assets/thums-up.jpg";
-import frenchFries from './assets/french-fries.jpg';
-import bread from './assets/bakery-bread.jpg';
+import frenchFries from "./assets/french-fries.jpg";
+import bread from "./assets/bakery-bread.jpg";
 
 export const ITEMS_ARRAY = [
   {
@@ -205,7 +207,7 @@ export const ITEMS_ARRAY = [
   },
   {
     id: 20,
-    name:'BREAD_BAKERY',
+    name: "BREAD_BAKERY",
     img: bread,
     title: "Milk Bread",
     price: "50",
@@ -214,3 +216,7 @@ export const ITEMS_ARRAY = [
     rating: "4.5",
   },
 ];
+
+// creating context to make this data available to all components that want to access
+const DataContext = React.createContext(ITEMS_ARRAY);
+export default DataContext;

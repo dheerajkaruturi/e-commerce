@@ -1,12 +1,15 @@
 import { Fragment } from "react";
+import { useContext } from "react";
 import "./recommendedItem.css";
-import { ITEMS_ARRAY } from "../../../data";
+import DataContext from "../../../data";
 
-const recommendedItem = () => {
-  const filtered_homepageItems = ITEMS_ARRAY.filter((items) => items.name === 'HOME_PAGE_ITEMS');
+const RecommendedItem = () => {
+  const data = useContext(DataContext).filter(
+    (items) => items.name === "HOME_PAGE_ITEMS"
+  );
   return (
     <Fragment>
-      {filtered_homepageItems.map((items) => (
+      {data.map((items) => (
         <div className="list_display">
           <img src={items.img} alt="items" />
           <div className="item__description">
@@ -26,7 +29,10 @@ const recommendedItem = () => {
             <button className="btn btn-sm btn-success">
               Add to Cart
               <span>
-                <i className="icon ion-md-cart" style={{marginLeft:'0.5rem'}}></i>
+                <i
+                  className="icon ion-md-cart"
+                  style={{ marginLeft: "0.5rem" }}
+                ></i>
               </span>
             </button>
           </div>
@@ -36,4 +42,4 @@ const recommendedItem = () => {
   );
 };
 
-export default recommendedItem;
+export default RecommendedItem;
