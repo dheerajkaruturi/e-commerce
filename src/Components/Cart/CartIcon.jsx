@@ -1,10 +1,13 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 const CartIcon = () => {
     return (
       <Fragment>
-        <i className="icon ion-md-cart"></i>
-        <span className="number__badge">5</span>
+        <Link to='/cart'>
+          <i className="icon ion-md-cart text-black"></i>
+          <span className="number__badge">5</span>
+        </Link>
       </Fragment>
     );
 }

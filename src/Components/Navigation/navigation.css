@@ -18,7 +18,16 @@
   text-align: center;
   border-bottom: 1px solid #ccc;
 }
-.aside-menu__items li p {
+.aside-menu__items li a {
   display: block;
-  font-weight: 600 !important;
+  text-decoration: none;
+  font-weight: 500 !important;
+  color: #2c2c2c;
+  transition: all 0.3s;
+}
+.aside-menu__items li a:hover {
+  transform: scale(1.2);
+}
+.aside-menu__items li a.active {
+  color: #fb641b;
 }

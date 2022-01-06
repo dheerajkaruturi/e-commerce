@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import CartIcon from "../Cart/CartIcon";
 import "./header.css";
 
@@ -45,8 +46,10 @@ const header = () => {
           </form>
           <div className="navbar-group__icon">
             <div className="icon__set">
-             <CartIcon />
-              <i className="icon ion-md-mail"></i>
+              <CartIcon />
+              <Link to="/home">
+                <i className="icon ion-md-home text-black" style={{cursor:"pointer"}}></i>
+              </Link>
               <i className="icon ion-md-person"></i>
             </div>
           </div>

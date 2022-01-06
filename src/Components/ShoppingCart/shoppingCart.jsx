@@ -13,7 +13,7 @@ const ShoppingCart = () => {
   };
   return (
     <Fragment>
-      <section className="cart-section p-3">
+      <section className="cart-section">
         <h3>
           Shopping Cart <i className="icon ion-md-cart"></i>
         </h3>

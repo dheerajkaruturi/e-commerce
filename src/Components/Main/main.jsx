@@ -10,7 +10,7 @@ import RecommendedItem from "../HelperComponents/HomepageRecomendedList/recommen
 
 const main = () => {
   return (
-    <section className="main-section p-3">
+    <section className="">
       <div className="flex--banner">
         <img src={sale_picture} alt="sale" className="sale_picture" />
       </div>

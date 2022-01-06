@@ -1,8 +1,6 @@
 import React from "react";
 
 import petFood from "./assets/pet-food.jpg";
-import plantPot from "./assets/plant_pot.jpg";
-import macBook from "./assets/laptop.jpg";
 import utensils from "./assets/utensels.jpg";
 import vim from "./assets/vim.jpg";
 import mango from "./assets/mango.jpg";
@@ -13,37 +11,20 @@ import pepsi from "./assets/pepsi.jpg";
 import thumsUp from "./assets/thums-up.jpg";
 import frenchFries from "./assets/french-fries.jpg";
 import bread from "./assets/bakery-bread.jpg";
+import lays1 from "./assets/Lays-Masala-Chips.jpg";
+import lays2 from "./assets/lays-packet-potato-chips.jpg";
+import maggi from "./assets/maggi.jpg";
 
 export const ITEMS_ARRAY = [
   {
     id: 1,
     name: "HOME_PAGE_ITEMS",
     img: petFood,
-    title: "Chicken Treats",
+    title: "Pedigree",
     price: "150",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
-  },
-  {
-    id: 2,
-    name: "HOME_PAGE_ITEMS",
-    img: plantPot,
-    title: "Plant Pot",
-    price: "100",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
-    rating: "2.5",
-  },
-  {
-    id: 3,
-    name: "HOME_PAGE_ITEMS",
-    img: macBook,
-    title: "MacBook Pro",
-    price: "90000",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
-    rating: "5",
   },
   {
     id: 4,
@@ -58,41 +39,41 @@ export const ITEMS_ARRAY = [
   {
     id: 5,
     name: "BRANDED_FOODS",
-    img: "./assets/Lays-Masala-Chips.jpg",
+    img: lays1,
     title: "Lays Potato Chips",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
-    cost: "20",
+    price: "20",
     rating: "4.5",
   },
   {
     id: 6,
     name: "BRANDED_FOODS",
-    img: "./assets/lays-packet-potato-chips.jpg",
+    img: lays2,
     title: "Lays Potato Chips",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
-    cost: "20",
+    price: "20",
     rating: "4.5",
   },
   {
     id: 7,
     name: "BRANDED_FOODS",
-    img: "./assets/maggi.jpg",
+    img: maggi,
     title: "Maggi",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
-    cost: "20",
+    price: "20",
     rating: "4.5",
   },
   {
     id: 8,
     name: "BRANDED_FOODS",
-    img: "./assets/bakery-bread.jpg",
+    img: bread,
     title: "Packed Bread",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
-    cost: "40",
+    price: "40",
     rating: "4.5",
   },
   {
@@ -102,7 +83,7 @@ export const ITEMS_ARRAY = [
     title: "Vim Dish Washer",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
-    cost: "50",
+    price: "50",
     rating: "4.5",
   },
   {
@@ -189,7 +170,7 @@ export const ITEMS_ARRAY = [
     id: 18,
     name: "PET_FOOD",
     img: petFood,
-    title: "Chicken Treats",
+    title: "Pedigree",
     price: "100",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
