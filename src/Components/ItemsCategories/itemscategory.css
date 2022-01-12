@@ -18,6 +18,8 @@
 }
 .img-holder {
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .img-holder img {
   width: 15rem;
@@ -27,7 +29,7 @@
   margin: 0 auto;
   margin-top: 1rem;
 }
-.itemTitle__placeholder p{
+.itemTitle__placeholder p {
   font-size: 1.25rem;
   font-weight: 500;
   letter-spacing: 2px;

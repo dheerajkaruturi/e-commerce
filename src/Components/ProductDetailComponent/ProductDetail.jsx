@@ -1,14 +1,18 @@
 import classes from "./productdetail.module.css";
 import { Fragment, useContext } from "react";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import DataContext from "../../data";
 
 const ProductDetail = () => {
+
+  // getting the params and using them to retrieve the data from context
   const params = useParams();
+  console.log(params);
 
   const foundId = useContext(DataContext).filter(
     (itemId) => itemId.id === +params.itemId
   );
+  console.log(foundId);
   return (
     <Fragment>
       {foundId.map((items) => (

@@ -1,9 +1,25 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import CartIcon from "../Cart/CartIcon";
 import "./header.css";
+import DataContext from "../../data";
 
-const header = () => {
+const Header = () => {
+  const [filtered, setFiltered] = useState([]);
+  const data = useContext(DataContext);
+  const searchHandler = function (e) {
+    const enteredCharacters = e.target.value;
+    const searchFilter = data.filter((items) => {
+      return items.title
+        .toLowerCase()
+        .includes(enteredCharacters.toLowerCase());
+    });
+    console.log(searchFilter);
+    setFiltered(searchFilter);
+
+    enteredCharacters === "" ? setFiltered([]) : setFiltered(searchFilter);
+  };
+
   return (
     <Fragment>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -11,44 +27,39 @@ const header = () => {
           <p className="navbar-brand">
             <span>C</span>orner <span>Store</span>
           </p>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <p>Events</p>
-              <p>About</p>
-              <p>Best Deals</p>
-              <p>Services</p>
+          <div className="d-block search-container">
+            <div className="search-box d-flex">
+              <div className="search-box__wrapper">
+                <input
+                  type="search"
+                  placeholder="Search Here..."
+                  onChange={searchHandler}
+                />
+              </div>
+              <button className="btn btn-primary">Search</button>
             </div>
+
+            {filtered.length > 0 && (
+              <div className="searchResults-wrapper">
+                <div className="results">
+                  {filtered.map((items) => (
+                    <Link to={`/items/${items.id}/itemdetails/${items.title}`}>
+                      <p>{items.title}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
-          <form className="d-flex">
-            <input
-              className="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-primary" type="submit">
-              <i
-                className="icon ion-md-search"
-                style={{ fontSize: "15px" }}
-              ></i>
-            </button>
-          </form>
+
           <div className="navbar-group__icon">
             <div className="icon__set">
               <CartIcon />
               <Link to="/home">
-                <i className="icon ion-md-home text-black" style={{cursor:"pointer"}}></i>
+                <i
+                  className="icon ion-md-home text-black"
+                  style={{ cursor: "pointer" }}
+                ></i>
               </Link>
               <i className="icon ion-md-person"></i>
             </div>
@@ -59,4 +70,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

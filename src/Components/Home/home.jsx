@@ -50,8 +50,9 @@ const home = () => {
           ></Route>
 
           <Route path="/cart" exact component={ShoppingCart}></Route>
-
-          <Route path="/items/:itemId" component={ProductDetail}></Route> 
+          
+          {/* creating dynamic route for item details */}
+          <Route path="/items/:itemId" component={ProductDetail}></Route>
 
           <Route path="*" component={Errorpage404}></Route>
         </Switch>

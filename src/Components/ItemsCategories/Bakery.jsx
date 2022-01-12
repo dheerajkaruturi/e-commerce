@@ -4,6 +4,8 @@ import "./itemscategory.css";
 import { Link } from "react-router-dom";
 
 const Bakery = () => {
+
+  // using the context created in data.js
   const data = useContext(DataContext).filter(
     (items) => items.name === "BREAD_BAKERY"
   );
@@ -12,7 +14,7 @@ const Bakery = () => {
       <div className="card-display__container">
         {data.map((items) => (
           <div className="itemCard-wrapper">
-            <Link to={`/items/${items.id}/itemdetails`}>
+            <Link to={`/items/${items.id}/itemdetails/${items.title}`}>
               <div className="img-holder">
                 <img src={items.img} alt="lays" />
               </div>
