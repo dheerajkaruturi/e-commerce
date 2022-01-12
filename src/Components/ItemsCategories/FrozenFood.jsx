@@ -1,6 +1,7 @@
 import { Fragment, useContext } from "react";
 import DataContext from "../../data";
 import "./itemscategory.css";
+import {Link} from 'react-router-dom'
 
 const FrozenFood = () => {
   const data = useContext(DataContext).filter(
@@ -11,9 +12,11 @@ const FrozenFood = () => {
       <div className="card-display__container">
         {data.map((items) => (
           <div className="itemCard-wrapper">
-            <div className="img-holder">
-              <img src={items.img} alt="lays" />
-            </div>
+            <Link to={`/items/${items.id}/itemdetails`}>
+              <div className="img-holder">
+                <img src={items.img} alt="lays" />
+              </div>
+            </Link>
             <div className="itemTitle__placeholder">
               <p>{items.title}</p>
             </div>
@@ -35,7 +38,7 @@ const FrozenFood = () => {
                 </span>
               </button>
               <button className="button wishlist-button">
-                To Wishlist{" "}
+                To Wishlist
                 <span>
                   <i className="ios ion-ios-heart"></i>
                 </span>

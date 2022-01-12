@@ -25,9 +25,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 4,
+    id: 3,
     name: "HOME_PAGE_ITEMS",
     img: utensils,
     title: "Cooking Utensils",
@@ -35,9 +48,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 5,
+    id: 4,
     name: "BRANDED_FOODS",
     img: lays1,
     title: "Lays Potato Chips",
@@ -45,9 +71,22 @@ export const ITEMS_ARRAY = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     price: "20",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 6,
+    id: 5,
     name: "BRANDED_FOODS",
     img: lays2,
     title: "Lays Potato Chips",
@@ -55,9 +94,22 @@ export const ITEMS_ARRAY = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     price: "20",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 7,
+    id: 6,
     name: "BRANDED_FOODS",
     img: maggi,
     title: "Maggi",
@@ -65,9 +117,22 @@ export const ITEMS_ARRAY = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     price: "20",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 8,
+    id: 7,
     name: "BRANDED_FOODS",
     img: bread,
     title: "Packed Bread",
@@ -75,9 +140,22 @@ export const ITEMS_ARRAY = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     price: "40",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 9,
+    id: 8,
     name: "HOUSE_HOLDS",
     img: vim,
     title: "Vim Dish Washer",
@@ -85,9 +163,22 @@ export const ITEMS_ARRAY = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     price: "50",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 10,
+    id: 9,
     name: "HOUSE_HOLDS",
     img: utensils,
     title: "Cooking Utensils",
@@ -95,9 +186,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 11,
+    id: 10,
     name: "VEGETABLES_FRUITS",
     img: mango,
     title: "Mango",
@@ -105,9 +209,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 12,
+    id: 11,
     name: "VEGETABLES_FRUITS",
     img: gauva,
     title: "Gauva",
@@ -115,9 +232,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 13,
+    id: 12,
     name: "VEGETABLES_FRUITS",
     img: tomato,
     title: "Tomato",
@@ -125,9 +255,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 14,
+    id: 13,
     name: "VEGETABLES_FRUITS",
     img: chilli,
     title: "Chilli",
@@ -135,9 +278,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 15,
+    id: 14,
     name: "KITCHEN",
     img: utensils,
     title: "Utensils",
@@ -145,9 +301,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "3.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 16,
+    id: 15,
     name: "BEVERAGES",
     img: pepsi,
     title: "Pepsi",
@@ -155,9 +324,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 17,
+    id: 16,
     name: "BEVERAGES",
     img: thumsUp,
     title: "Thums Up",
@@ -165,9 +347,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 18,
+    id: 17,
     name: "PET_FOOD",
     img: petFood,
     title: "Pedigree",
@@ -175,9 +370,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 19,
+    id: 18,
     name: "FROZEN_FOOD",
     img: frenchFries,
     title: "French Fries",
@@ -185,9 +393,22 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
   {
-    id: 20,
+    id: 19,
     name: "BREAD_BAKERY",
     img: bread,
     title: "Milk Bread",
@@ -195,9 +416,23 @@ export const ITEMS_ARRAY = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
   },
 ];
 
 // creating context to make this data available to all components that want to access
 const DataContext = React.createContext(ITEMS_ARRAY);
+
 export default DataContext;

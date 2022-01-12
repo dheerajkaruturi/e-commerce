@@ -12,7 +12,9 @@ import HouseHold from "../ItemsCategories/HouseHold";
 import Kitchen from "../ItemsCategories/Kitchen";
 import PetFood from "../ItemsCategories/PetFood";
 import VegetableFruits from "../ItemsCategories/Vegetable_Fruits";
-import { Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
+import Errorpage404 from "../PagenotFound/404Error";
+import ProductDetail from "../ProductDetailComponent/ProductDetail";
 
 const home = () => {
   return (
@@ -20,46 +22,39 @@ const home = () => {
       <Header />
       <Navigation />
       <div className="main-section p-3">
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/home" />
+          </Route>
 
-        <Route path="/home">
-          <Main />
-        </Route>
+          <Route path="/home" exact component={Main}></Route>
 
-        <Route path="/bakery">
-          <Bakery />
-        </Route>
+          <Route path="/bakery" exact component={Bakery}></Route>
 
-        <Route path="/beverages">
-          <Beverages />
-        </Route>
+          <Route path="/beverages" exact component={Beverages}></Route>
 
-        <Route path="/brandedfood">
-          <BrandedFood />
-        </Route>
+          <Route path="/brandedfood" exact component={BrandedFood}></Route>
 
-        <Route path="/frozenfood">
-          <FrozenFood />
-        </Route>
+          <Route path="/frozenfood" exact component={FrozenFood}></Route>
 
-        <Route path="/household">
-          <HouseHold />
-        </Route>
+          <Route path="/household" exact component={HouseHold}></Route>
 
-        <Route path="/kitchen">
-          <Kitchen />
-        </Route>
+          <Route path="/kitchen" exact component={Kitchen}></Route>
 
-        <Route path="/petfood">
-          <PetFood />
-        </Route>
+          <Route path="/petfood" exact component={PetFood}></Route>
 
-        <Route path="/vegetablesfruits">
-          <VegetableFruits />
-        </Route>
+          <Route
+            path="/vegetablesfruits"
+            exact
+            component={VegetableFruits}
+          ></Route>
 
-        <Route path="/cart">
-          <ShoppingCart />
-        </Route>
+          <Route path="/cart" exact component={ShoppingCart}></Route>
+
+          <Route path="/items/:itemId" component={ProductDetail}></Route> 
+
+          <Route path="*" component={Errorpage404}></Route>
+        </Switch>
       </div>
     </Fragment>
   );

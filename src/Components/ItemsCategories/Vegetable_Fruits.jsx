@@ -1,6 +1,7 @@
 import { Fragment, useContext } from "react";
 import DataContext from "../../data";
 import "./itemscategory.css";
+import { Link } from 'react-router-dom';
 
 const Vegetable_Fruits = () => {
   const data = useContext(DataContext).filter(
@@ -11,9 +12,11 @@ const Vegetable_Fruits = () => {
       <div className="card-display__container">
         {data.map((items) => (
           <div className="itemCard-wrapper">
-            <div className="img-holder">
-              <img src={items.img} alt="lays" />
-            </div>
+            <Link to={`/items/${items.id}/itemdetails`}>
+              <div className="img-holder">
+                <img src={items.img} alt="lays" />
+              </div>
+            </Link>
             <div className="itemTitle__placeholder">
               <p>{items.title}</p>
             </div>
