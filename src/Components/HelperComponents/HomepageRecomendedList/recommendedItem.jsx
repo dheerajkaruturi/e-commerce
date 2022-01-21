@@ -13,7 +13,7 @@ const RecommendedItem = () => {
         {data.map((items) => (
           <div className="itemCard-wrapper">
             <div className="img-holder">
-              <img src={items.img} alt="lays" />
+              <img src={items.img} alt="item_display" />
             </div>
             <div className="itemTitle__placeholder">
               <p>{items.title}</p>

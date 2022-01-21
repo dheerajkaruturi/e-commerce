@@ -4,10 +4,8 @@ import CartContext from "../store/CartContext";
 
 const CartIcon = () => {
   const cartItemContext = useContext(CartContext);
-  
-  console.log(cartItemContext);
-  const numberOfCartitems = cartItemContext.length;
-  console.log(numberOfCartitems);
+
+  const numberOfCartitems = cartItemContext.items.length;
   return (
     <Fragment>
       <Link to="/cart">

@@ -43,7 +43,7 @@ const Header = () => {
               <div className="searchResults-wrapper">
                 <div className="results">
                   {filtered.map((items) => (
-                    <Link to={`/items/${items.id}/itemdetails/${items.title}`}>
+                    <Link to={`/item/${items.id}/itemdetails/${items.title}`}>
                       <p>{items.title}</p>
                     </Link>
                   ))}

@@ -14,6 +14,7 @@ import bread from "./assets/bakery-bread.jpg";
 import lays1 from "./assets/Lays-Masala-Chips.jpg";
 import lays2 from "./assets/lays-packet-potato-chips.jpg";
 import maggi from "./assets/maggi.jpg";
+import brownBread from './assets/brownBread.jpg'
 
 export const ITEMS_ARRAY = [
   {
@@ -413,6 +414,29 @@ export const ITEMS_ARRAY = [
     img: bread,
     title: "Milk Bread",
     price: "50",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
+    rating: "4.5",
+    completeData: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi
+            similique, eos dolorem voluptate provident a accusantium vero itaque
+            possimus dolores, saepe impedit eum eaque cum ipsam rem dolor fuga
+            pariatur? Beatae similique quasi nesciunt exercitationem at
+            voluptatibus nemo tenetur voluptas aspernatur? Quis debitis saepe id
+            recusandae, inventore sequi architecto sint? Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Dignissimos libero obcaecati
+            saepe debitis dicta deleniti, corporis dolorum, quisquam aperiam
+            fugiat possimus autem consequatur unde magni, distinctio cupiditate?
+            Molestias laborum maxime saepe voluptas ratione suscipit
+            perspiciatis temporibus, nobis, nemo modi quo perferendis autem
+            expedita omnis, cumque dolorum necessitatibus repellat fuga
+            consectetur!`,
+  },
+  {
+    id: 20,
+    name: "BREAD_BAKERY",
+    img: brownBread,
+    title: "Brown Bread",
+    price: "100",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     rating: "4.5",

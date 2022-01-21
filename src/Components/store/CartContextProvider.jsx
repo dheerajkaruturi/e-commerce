@@ -9,10 +9,15 @@ const CartContextProvider = (props) => {
 
   const cartReducer = function (state, action) {
     if (action.type === "ADD_TO_CART") {
-        const updatedCartItems = state.items.concat(action.items);
-        console.log(updatedCartItems);
-        // const updatedTotalAmount = state.totalPrice + (action.items.price);
-        // console.log(updatedTotalAmount)
+      const updatedCartItems = state.items.concat(action.items);
+      console.log(updatedCartItems);
+      return {
+        items: updatedCartItems,
+        totalPrice: 100,
+      };
+
+      // const updatedTotalAmount = state.totalPrice + (action.items.price);
+      // console.log(updatedTotalAmount)
     } else if (action.type === "REMOVE_FROM_CART") {
     }
     return initialCartState;
@@ -35,9 +40,7 @@ const CartContextProvider = (props) => {
     items: cartState.items,
     totalPrice: cartState.totalPrice,
     addItem: addCartitemHandler,
-      removeItem: removeCartItemHandler,
-      updatedItems: cartState.updatedCartItems
-    
+    removeItem: removeCartItemHandler,
   };
   return (
     <CartContext.Provider value={cartContext}>

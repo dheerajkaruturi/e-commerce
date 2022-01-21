@@ -52,7 +52,7 @@ const home = () => {
           <Route path="/cart" exact component={ShoppingCart}></Route>
           
           {/* creating dynamic route for item details */}
-          <Route path="/items/:itemId" component={ProductDetail}></Route>
+          <Route path="/item/:itemId" component={ProductDetail}></Route>
 
           <Route path="*" component={Errorpage404}></Route>
         </Switch>

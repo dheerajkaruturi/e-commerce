@@ -9,33 +9,24 @@ const Bakery = () => {
   const data = useContext(DataContext).filter(
     (items) => items.name === "BREAD_BAKERY"
   );
-  const cartItemsContext = useContext(CartContext);
-  const cartItem = data.map((items) => {
-    return {
-      id: items.id,
-      img: items.img,
-      title: items.title,
-      price: items.price,
-    };
-  });
-  const addtoCart = function () {
-    cartItemsContext.addItem(cartItem);
-  };
+  const cartCtxtConsumer = useContext(CartContext);
+  const addtoCart = (item) => cartCtxtConsumer.addItem(item);
+
   return (
     <Fragment>
       <div className="card-display__container">
-        {data.map((items) => (
+        {data.map((item) => (
           <div className="itemCard-wrapper">
-            <Link to={`/items/${items.id}/itemdetails/${items.title}`}>
+            <Link to={`/item/${item.id}/itemdetails/${item.title}`}>
               <div className="img-holder">
-                <img src={items.img} alt="lays" />
+                <img src={item.img} alt="item_display" />
               </div>
             </Link>
             <div className="itemTitle__placeholder">
-              <p>{items.title}</p>
+              <p>{item.title}</p>
             </div>
             <div className="item__price">
-              <p>Price: {items.price} ₹</p>
+              <p>Price: {item.price} ₹</p>
             </div>
             <div className="item__description">
               <p>
@@ -45,7 +36,10 @@ const Bakery = () => {
               </p>
             </div>
             <div className="button__container">
-              <button className="button cart-button" onClick={addtoCart}>
+              <button
+                className="button cart-button"
+                onClick={() => addtoCart(item)}
+              >
                 Add to Cart
                 <span>
                   <i className="ios ion-ios-cart"></i>
