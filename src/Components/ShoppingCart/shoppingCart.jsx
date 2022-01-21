@@ -7,6 +7,7 @@ const ShoppingCart = () => {
   const [cartList, setcartList] = useState(false);
   const cartItemList = useContext(CartContext);
   const displayCart = cartItemList.items;
+  const totalPriceofCartItems = cartItemList.totalPrice;
 
   useEffect(() => {
     if (cartItemList.items.length !== 0) {
@@ -14,7 +15,12 @@ const ShoppingCart = () => {
     }
   }, [cartItemList]);
 
-  console.log(displayCart);
+  //console.log(displayCart);
+
+  const buyHandler = function () {
+    alert(`Are you sure to make payment of Rs ${totalPriceofCartItems}?`);
+  };
+
   return (
     <Fragment>
       <section className="cart-section">
@@ -49,7 +55,10 @@ const ShoppingCart = () => {
         {/* render this bill part conditionally */}
         {cartList ? (
           <div className="bill_summary">
-            <h4>Total Amount : 6000 ₹</h4>
+            <h4>Total Amount to be paid is : {totalPriceofCartItems} ₹</h4>
+            <button className="btn btn-success" onClick={buyHandler}>
+              Make Payment
+            </button>
           </div>
         ) : (
           <div className="no_cartItems">

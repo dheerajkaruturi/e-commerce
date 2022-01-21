@@ -10,14 +10,13 @@ const CartContextProvider = (props) => {
   const cartReducer = function (state, action) {
     if (action.type === "ADD_TO_CART") {
       const updatedCartItems = state.items.concat(action.items);
-      console.log(updatedCartItems);
+      const updatedTotalAmount = (+state.totalPrice) + (+action.items.price);
+      console.log(updatedTotalAmount);
+      //console.log(updatedCartItems);
       return {
         items: updatedCartItems,
-        totalPrice: 100,
+        totalPrice: updatedTotalAmount,
       };
-
-      // const updatedTotalAmount = state.totalPrice + (action.items.price);
-      // console.log(updatedTotalAmount)
     } else if (action.type === "REMOVE_FROM_CART") {
     }
     return initialCartState;

@@ -32,16 +32,17 @@
   text-transform: capitalize;
 }
 .bill_summary {
-  border: 1px solid lightgrey;
-  padding: 1.5rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
   border-radius: 5rem;
+  display: flex;
+  justify-content: space-between;
+  flex: 0;
 }
 .bill_summary h4 {
   text-transform: capitalize;
   font-size: 1.75rem;
-  text-align: center;
-  font-weight: 700;
+  text-align: left;
+  font-weight: 500;
 }
 .no_cartItems {
   font-size: 2rem;
