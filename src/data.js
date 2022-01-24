@@ -67,7 +67,7 @@ export const ITEMS_ARRAY = [
     id: 4,
     name: "BRANDED_FOODS",
     img: lays1,
-    title: "Lays Potato Chips",
+    title: "Potato Chips",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     price: "20",
@@ -90,7 +90,7 @@ export const ITEMS_ARRAY = [
     id: 5,
     name: "BRANDED_FOODS",
     img: lays2,
-    title: "Lays Potato Chips",
+    title: "Potato Chips",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aliquid exercitationem aspernatur iure distinctio veritatis hic ipsa nisi voluptatibus neque",
     price: "20",

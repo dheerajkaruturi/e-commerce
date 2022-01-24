@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import "./saleannouncementcard.css";
 
 const SaleAnnouncementCard = (props) => {
-  const endTime = new Date("Jan 30, 2022 00:00:00").getTime();
+  const endTime = new Date("Jan 30, 2023 00:00:00").getTime();
 
   const [currentTime, setCurrentTime] = useState(new Date().getTime());
 

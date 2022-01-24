@@ -45,11 +45,16 @@
   font-weight: 500;
 }
 .no_cartItems {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: -2rem;
+}
+.no_cartItems img{
+  width: auto;
+  height: 25rem;
 }

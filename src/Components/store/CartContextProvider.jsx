@@ -10,14 +10,24 @@ const CartContextProvider = (props) => {
   const cartReducer = function (state, action) {
     if (action.type === "ADD_TO_CART") {
       const updatedCartItems = state.items.concat(action.items);
-      const updatedTotalAmount = (+state.totalPrice) + (+action.items.price);
-      console.log(updatedTotalAmount);
-      //console.log(updatedCartItems);
+      const updatedTotalAmount = +state.totalPrice + +action.items.price;
       return {
         items: updatedCartItems,
         totalPrice: updatedTotalAmount,
       };
     } else if (action.type === "REMOVE_FROM_CART") {
+      const currentStateItems = [...state.items];
+      const foundIndex = currentStateItems
+        .map((items) => items.id)
+        .findIndex((requiredId) => requiredId === action.id);
+      const [removedCartItem] = currentStateItems.splice(foundIndex, 1);
+      const updatedPriceafterRemovinganItem =
+        state.totalPrice - removedCartItem.price;
+
+      return {
+        items: [...currentStateItems],
+        totalPrice: updatedPriceafterRemovinganItem,
+      };
     }
     return initialCartState;
   };
