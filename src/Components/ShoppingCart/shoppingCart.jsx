@@ -1,16 +1,18 @@
 import { Fragment, useContext, useState, useEffect } from "react";
-import "./shoppingCart.css";
-import emptyCart from '../../assets/empty_cart.png'
-
+import emptyCart from "../../assets/empty_cart.png";
 import CartContext from "../store/CartContext";
+import "./shoppingCart.css";
 
 const ShoppingCart = () => {
-  const [cartList, setcartList] = useState(false);
-  const cartItemList = useContext(CartContext);
+  const [cartList, setcartList] = useState(false); //* for conditional render at line 72
+
+  const cartItemList = useContext(CartContext); //* consuming the provided CartContext 
+
   const displayCart = cartItemList.items;
+
   const totalPriceofCartItems = cartItemList.totalPrice;
 
-  //* makes the cart items render when there are items inside the context array:
+  //! makes the cart items render only for one time:
 
   useEffect(() => {
     if (cartItemList.items.length !== 0) {
@@ -18,19 +20,16 @@ const ShoppingCart = () => {
     }
   }, [cartItemList]);
 
-  //console.log(displayCart);
-
-  //* ui response to when user selects to buy the cart items:
+  //? ui response to when user selects to buy the cart items:
 
   const buyHandler = function () {
     alert(`Are you sure to make payment of Rs ${totalPriceofCartItems}?`);
   };
 
-  //* remove cart item button functionality:
+  //? remove cart item button functionality:
 
-  const deleteHandler = (cartItem) => {
-    console.log("deletehandler", cartItem);
-    cartItemList.removeItem(cartItem);
+  const deleteHandler = (cartItem_id) => {
+    cartItemList.removeItem(cartItem_id); //* accessing removeItem method from context
   };
 
   return (
@@ -41,7 +40,7 @@ const ShoppingCart = () => {
         </h3>
         <p
           style={{
-            fontSize: "0.75rem",
+            fontSize: "0.85rem",
             fontWeight: "bold",
             marginTop: "0.5rem",
           }}
@@ -80,8 +79,8 @@ const ShoppingCart = () => {
             )}
           </div>
         ) : (
-            <div className="no_cartItems">
-              <img src={emptyCart} alt="Empty Cart" />
+          <div className="no_cartItems">
+            <img src={emptyCart} alt="Empty Cart" />
             <p>No items to show... 🤷🏼‍♂️</p>
           </div>
         )}

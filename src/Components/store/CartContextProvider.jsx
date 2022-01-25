@@ -2,10 +2,14 @@ import { useReducer } from "react";
 import CartContext from "./CartContext";
 
 const CartContextProvider = (props) => {
+  //? initial state of the cart object.
+
   const initialCartState = {
     items: [],
     totalPrice: 0,
   };
+
+  //? Reducer function which has both add and remove items functionality.
 
   const cartReducer = function (state, action) {
     if (action.type === "ADD_TO_CART") {
@@ -32,10 +36,14 @@ const CartContextProvider = (props) => {
     return initialCartState;
   };
 
+  //? making use of useReducer hook.
+
   const [cartState, dispatchCartActions] = useReducer(
     cartReducer,
     initialCartState
   );
+
+  //* methods containing dispatch actions.
 
   let addCartitemHandler = (items) => {
     dispatchCartActions({ type: "ADD_TO_CART", items: items });
@@ -44,6 +52,8 @@ const CartContextProvider = (props) => {
   let removeCartItemHandler = (id) => {
     dispatchCartActions({ type: "REMOVE_FROM_CART", id: id });
   };
+
+  //! cart context object that needs to be exported and used by the components that consumer the context provider data.
 
   const cartContext = {
     items: cartState.items,
