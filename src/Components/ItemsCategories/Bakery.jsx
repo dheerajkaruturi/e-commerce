@@ -1,17 +1,25 @@
 import { Fragment, useContext } from "react";
 import DataContext from "../../data";
 import CartContext from "../store/CartContext";
+import { WishlistContext } from "../store/WishListContext";
 import "./itemscategory.css";
 import { Link } from "react-router-dom";
 
 const Bakery = () => {
-  // using the context created in data.js
+  //* using the context created in data.js
   const data = useContext(DataContext).filter(
     (items) => items.name === "BREAD_BAKERY"
   );
+
+  //* using cart context
   const cartCtxtConsumer = useContext(CartContext);
   const addtoCart = (item) => cartCtxtConsumer.addItem(item);
 
+  //* using wishlist context
+  const wishlistCtxt = useContext(WishlistContext);
+  const addtoWishlist = function (item) {
+    wishlistCtxt.addItem(item);
+  };
   return (
     <Fragment>
       <div className="card-display__container">
@@ -45,7 +53,10 @@ const Bakery = () => {
                   <i className="ios ion-ios-cart"></i>
                 </span>
               </button>
-              <button className="button wishlist-button">
+              <button
+                className="button wishlist-button"
+                onClick={() => addtoWishlist(item)}
+              >
                 To Wishlist{" "}
                 <span>
                   <i className="ios ion-ios-heart"></i>

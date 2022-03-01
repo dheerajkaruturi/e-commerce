@@ -7,6 +7,8 @@ import DataContext from "../../data";
 const Header = () => {
   const [filtered, setFiltered] = useState([]);
   const data = useContext(DataContext);
+
+  //? search functionality:
   const searchHandler = function (e) {
     const enteredCharacters = e.target.value;
     const searchFilter = data.filter((items) => {
@@ -61,7 +63,9 @@ const Header = () => {
                   style={{ cursor: "pointer" }}
                 ></i>
               </Link>
-              <i className="icon ion-md-person"></i>
+              <Link to="/wishlist">
+                <i className="icon ion-md-heart text-black"></i>
+              </Link>
             </div>
           </div>
         </div>

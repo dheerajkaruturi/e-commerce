@@ -30,7 +30,7 @@ const ShoppingCart = () => {
 
   const deleteHandler = (cartItem_id) => {
     cartItemList.removeItem(cartItem_id); //* accessing removeItem method from context
-  };
+  }; 
 
   return (
     <Fragment>

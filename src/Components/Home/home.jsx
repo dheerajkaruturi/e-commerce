@@ -15,6 +15,7 @@ import VegetableFruits from "../ItemsCategories/Vegetable_Fruits";
 import { Route, Switch, Redirect } from "react-router-dom";
 import Errorpage404 from "../PagenotFound/404Error";
 import ProductDetail from "../ProductDetailComponent/ProductDetail";
+import WishlistItems from "../WishlistedItems/WishlistItems";
 
 const home = () => {
   return (
@@ -50,6 +51,8 @@ const home = () => {
           ></Route>
 
           <Route path="/cart" exact component={ShoppingCart}></Route>
+
+          <Route path='/wishlist' exact component={WishlistItems}></Route>
           
           {/* creating dynamic route for item details */}
           <Route path="/item/:itemId" component={ProductDetail}></Route>

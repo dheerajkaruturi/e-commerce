@@ -1,6 +1,6 @@
 import React from "react";
 
-const intialCartState = {
+const intialCartState = { 
   items: [],
   totalPrice: 0,
   addItem: (item) => {},

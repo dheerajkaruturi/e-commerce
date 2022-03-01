@@ -25,6 +25,7 @@ const CartContextProvider = (props) => {
         .map((items) => items.id)
         .findIndex((requiredId) => requiredId === action.id);
       const [removedCartItem] = currentStateItems.splice(foundIndex, 1);
+      console.log(removedCartItem);
       const updatedPriceafterRemovinganItem =
         state.totalPrice - removedCartItem.price;
 
