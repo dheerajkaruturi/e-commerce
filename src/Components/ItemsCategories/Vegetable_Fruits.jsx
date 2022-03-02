@@ -3,13 +3,22 @@ import DataContext from "../../data";
 import "./itemscategory.css";
 import { Link } from "react-router-dom";
 import CartContext from "../store/CartContext";
+import { WishlistContext } from "../store/WishListContext";
 
 const Vegetable_Fruits = () => {
   const data = useContext(DataContext).filter(
     (items) => items.name === "VEGETABLES_FRUITS"
   );
+
+  //? tapping to cart context
   const cartCtxtConsumer = useContext(CartContext);
   const addtoCart = (item) => cartCtxtConsumer.addItem(item);
+
+  //? tapping to wishlist context
+  const wishlistCtx = useContext(WishlistContext);
+  const addtoWishlist = function (item) {
+    wishlistCtx.addItem(item);
+  };
   return (
     <Fragment>
       <div className="card-display__container">
@@ -43,7 +52,10 @@ const Vegetable_Fruits = () => {
                   <i className="ios ion-ios-cart"></i>
                 </span>
               </button>
-              <button className="button wishlist-button">
+              <button
+                className="button wishlist-button"
+                onClick={() => addtoWishlist(item)}
+              >
                 To Wishlist{" "}
                 <span>
                   <i className="ios ion-ios-heart"></i>

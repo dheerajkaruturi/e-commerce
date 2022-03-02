@@ -27,16 +27,20 @@ const WishListContextProvider = (props) => {
 
     //*removing items from wishlist functionaity
     else if (action.type === "REMOVE_FROM_WISHLIST") {
-      //* items present in the items array at that movement.
+      //* items present in the items array at that current movement.
       const presentWIshlistItems = [...state.items];
 
-      //* seperating the items in the array by filtering them out and creating a new array.
-      const filteredItems = presentWIshlistItems.filter((itemId) => {
-        return action.id !== itemId;
-      });
-      console.log(filteredItems);
+      //* removing the selected item in that array by finding the index of that item.
+      const selectedItem = presentWIshlistItems
+        .map((item) => item.id)
+        .findIndex((requiredId) => requiredId === action.id);
+      const [removedWishlistItem] = presentWIshlistItems.splice(
+        selectedItem,
+        1
+      );
+      console.log(removedWishlistItem);
       return {
-        items: filteredItems,
+        items: [...presentWIshlistItems],
       };
     }
     //* if both actions does not happen this function returns the initial value or state of the items array
