@@ -20,6 +20,11 @@ const Bakery = () => {
   const addtoWishlist = function (item) {
     wishlistCtxt.addItem(item);
   };
+
+  //* to get items count:
+  const getCartitemsCount = function (item_id) {
+    return cartCtxtConsumer.items.filter((item) => item.id === item_id).length;
+  };
   return (
     <Fragment>
       <div className="card-display__container">
@@ -47,10 +52,16 @@ const Bakery = () => {
               <button
                 className="button cart-button"
                 onClick={() => addtoCart(item)}
+                style={{
+                  position: "relative",
+                }}
               >
                 Add to Cart
                 <span>
-                  <i className="ios ion-ios-cart"></i>
+                  <i className="ios ion-ios-cart"></i>{" "}
+                  <span className="count_badge">
+                    {getCartitemsCount(item.id)}
+                  </span>
                 </span>
               </button>
               <button

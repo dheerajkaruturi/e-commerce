@@ -78,3 +78,12 @@
   background-color: #ec3b59;
   color: #fff;
 }
+.count_badge {
+  position: absolute;
+  top: -1rem;
+  color: white;
+  border: 2px solid #ffffff;
+  background-color: #fb641b;
+  padding: 3px 9px;
+  border-radius: 50%;
+}
