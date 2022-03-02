@@ -59,9 +59,11 @@ const Bakery = () => {
                 Add to Cart
                 <span>
                   <i className="ios ion-ios-cart"></i>{" "}
-                  <span className="count_badge">
-                    {getCartitemsCount(item.id)}
-                  </span>
+                  {getCartitemsCount(item.id) > 0 && (
+                    <span className="count_badge">
+                      {getCartitemsCount(item.id)}
+                    </span>
+                  )}
                 </span>
               </button>
               <button
