@@ -1,8 +1,15 @@
 import { Fragment, useContext } from "react";
 import { WishlistContext } from "../store/WishListContext";
+import CartContext from "../store/CartContext";
 import styles from "./wishlist.module.css";
 
 const WishlistItems = function () {
+  //* tapping to cart context
+  const cartCtx = useContext(CartContext);
+  const addtCart = function (item) {
+    cartCtx.addItem(item);
+  };
+
   //* tapping to context
   const wishlistItemsctxt = useContext(WishlistContext);
 
@@ -27,7 +34,7 @@ const WishlistItems = function () {
                 <button onClick={() => removeItem(item.id)}>
                   Remove from Wishlist
                 </button>
-                <button>Add to cart</button>
+                <button onClick={() => addtCart(item)}>Add to cart</button>
               </div>
             </div>
           );
