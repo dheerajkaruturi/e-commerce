@@ -1,7 +1,7 @@
 import React from "react";
 
 const intialCartState = { 
-  items: [],
+  items: [], 
   totalPrice: 0,
   addItem: (item) => {},
   removeItem: (id) => {},

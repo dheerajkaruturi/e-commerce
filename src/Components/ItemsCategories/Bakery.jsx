@@ -5,7 +5,7 @@ import { WishlistContext } from "../store/WishListContext";
 import "./itemscategory.css";
 import { Link } from "react-router-dom";
 
-const Bakery = () => {
+const Bakery = (props) => {
   //* using the context created in data.js
   const data = useContext(DataContext).filter(
     (items) => items.name === "BREAD_BAKERY"
@@ -13,7 +13,9 @@ const Bakery = () => {
 
   //* using cart context
   const cartCtxtConsumer = useContext(CartContext);
-  const addtoCart = (item) => cartCtxtConsumer.addItem(item);
+  const addtoCart = function (item, quantity) {
+    cartCtxtConsumer.addItem(item, quantity);
+  };
 
   //* using wishlist context
   const wishlistCtxt = useContext(WishlistContext);
@@ -25,6 +27,7 @@ const Bakery = () => {
   const getCartitemsCount = function (item_id) {
     return cartCtxtConsumer.items.filter((item) => item.id === item_id).length;
   };
+
   return (
     <Fragment>
       <div className="card-display__container">
@@ -51,7 +54,7 @@ const Bakery = () => {
             <div className="button__container">
               <button
                 className="button cart-button"
-                onClick={() => addtoCart(item)}
+                onClick={() => addtoCart(item, getCartitemsCount())}
                 style={{
                   position: "relative",
                 }}

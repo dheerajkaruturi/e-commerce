@@ -15,6 +15,11 @@ const ProductDetail = () => {
 
   const cartCtxtConsumer = useContext(CartContext);
   const addtoCart = (item) => cartCtxtConsumer.addItem(item);
+
+  //* to get items count:
+  const getCartitemsCount = function (item_id) {
+    return cartCtxtConsumer.items.filter((item) => item.id === item_id).length;
+  };
   return (
     <Fragment>
       {foundId.map((item) => (
@@ -30,10 +35,18 @@ const ProductDetail = () => {
               <button
                 className={classes.cart_button}
                 onClick={() => addtoCart(item)}
+                style={{
+                  position: "relative",
+                }}
               >
                 add to cart{" "}
                 <span>
-                  <i className="ios ion-ios-cart"></i>
+                  <i className="ios ion-ios-cart"></i>{" "}
+                  {getCartitemsCount(item.id) > 0 && (
+                    <span className="count_badge">
+                      {getCartitemsCount(item.id)}
+                    </span>
+                  )}
                 </span>
               </button>
               <button className={classes.wishlist_button}>

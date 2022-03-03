@@ -17,7 +17,7 @@ import Errorpage404 from "../PagenotFound/404Error";
 import ProductDetail from "../ProductDetailComponent/ProductDetail";
 import WishlistItems from "../WishlistedItems/WishlistItems";
 
-const home = () => {
+const home = (props) => {
   return (
     <Fragment>
       <Header />
@@ -52,8 +52,8 @@ const home = () => {
 
           <Route path="/cart" exact component={ShoppingCart}></Route>
 
-          <Route path='/wishlist' exact component={WishlistItems}></Route>
-          
+          <Route path="/wishlist" exact component={WishlistItems}></Route>
+
           {/* creating dynamic route for item details */}
           <Route path="/item/:itemId" component={ProductDetail}></Route>
 

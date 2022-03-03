@@ -1,12 +1,13 @@
 import { Fragment, useContext, useState, useEffect } from "react";
 import emptyCart from "../../assets/empty_cart.png";
 import CartContext from "../store/CartContext";
+import InputQuantites from "./InputQuantities";
 import "./shoppingCart.css";
 
-const ShoppingCart = () => {
+const ShoppingCart = (props) => {
   const [cartList, setcartList] = useState(false); //* for conditional render at line 72
 
-  const cartItemList = useContext(CartContext); //* consuming the provided CartContext 
+  const cartItemList = useContext(CartContext); //* consuming the provided CartContext
 
   const displayCart = cartItemList.items;
 
@@ -30,7 +31,22 @@ const ShoppingCart = () => {
 
   const deleteHandler = (cartItem_id) => {
     cartItemList.removeItem(cartItem_id); //* accessing removeItem method from context
-  }; 
+  };
+
+  //? filtering duplicate items and pushing unique values to a new array:
+  const uniqueCartItems = [];
+
+  displayCart.map((itemsMapped) =>
+    uniqueCartItems.filter((itemFiltered) => itemsMapped.id === itemFiltered.id)
+      .length > 0
+      ? null
+      : uniqueCartItems.push(itemsMapped)
+  );
+
+  //? count duplicate items:
+  const countduplicateItems = function (itemId) {
+    
+  };
 
   return (
     <Fragment>
@@ -47,7 +63,7 @@ const ShoppingCart = () => {
         >
           There are {`${displayCart.length}`} items in your cart.
         </p>
-        {displayCart.map((cartItem) => (
+        {uniqueCartItems.map((cartItem) => (
           <div className="cartitemsList-container">
             <div className="item_img">
               <img src={cartItem.img} alt="item_display" />
@@ -58,6 +74,7 @@ const ShoppingCart = () => {
             <div className="item_price">
               <p>{cartItem.price} ₹</p>
             </div>
+            <InputQuantites countDup = {countduplicateItems} />
             <div className="remove_button">
               <button
                 className="btn btn-danger"

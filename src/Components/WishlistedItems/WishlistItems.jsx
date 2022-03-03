@@ -7,7 +7,11 @@ const WishlistItems = function () {
   //* tapping to cart context
   const cartCtx = useContext(CartContext);
   const addtCart = function (item) {
+    //* to add item to shopping cart:
     cartCtx.addItem(item);
+
+    //* after item is added to shopping cart the same item will be removed from the wishlist
+    wishlistItemsctxt.removeItem(item.id);
   };
 
   //* tapping to context
@@ -23,6 +27,17 @@ const WishlistItems = function () {
   return (
     <Fragment>
       <div className={styles.itemsinWishlist}>
+        {wishlistItems.length === 0 && (
+          <p
+            style={{
+              fontSize: "1.5rem",
+              fontWeight: "bolder",
+              marginTop: "1rem",
+            }}
+          >
+            No items in the wishlist... Try adding few 😁
+          </p>
+        )}
         {wishlistItems.map((item) => {
           return (
             <div className={styles.itemContainer}>
