@@ -26,18 +26,27 @@ const CartContextProvider = (props) => {
     else if (action.type === "REMOVE_FROM_CART") {
       const currentStateItems = [...state.items];
 
-      const foundIndex = currentStateItems
+      const item = currentStateItems.find((i) => {
+        return i.id === action.id;
+      });
+
+      //* filtering items that are needed to be removed from the cart
+      const filteredItems = currentStateItems.filter(
+        (item) => item.id !== action.id
+      );
+      console.log(filteredItems);
+
+      //* filtering the removed items to calculate the total sum of price of all items removed
+      const calc = currentStateItems
         .map((items) => items.id)
-        .findIndex((requiredId) => requiredId === action.id);
+        .filter((requiredId) => requiredId === action.id);
 
-      const [removedCartItem] = currentStateItems.splice(foundIndex, 1);
-
-      const updatedPriceafterRemovinganItem =
-        state.totalPrice - removedCartItem.price;
+      const updatedPriceafterRemovingItems =
+        state.totalPrice - (calc.length * item.price);
 
       return {
-        items: [...currentStateItems],
-        totalPrice: updatedPriceafterRemovinganItem,
+        items: filteredItems,
+        totalPrice: updatedPriceafterRemovingItems ,
       };
     }
     //! increment selected item.
