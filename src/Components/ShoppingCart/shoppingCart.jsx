@@ -1,7 +1,6 @@
 import { Fragment, useContext, useState, useEffect } from "react";
 import emptyCart from "../../assets/empty_cart.png";
 import CartContext from "../store/CartContext";
-import InputQuantites from "./InputQuantities";
 import "./shoppingCart.css";
 
 const ShoppingCart = (props) => {
@@ -43,11 +42,20 @@ const ShoppingCart = (props) => {
       : uniqueCartItems.push(itemsMapped)
   );
 
-  //? count duplicate items:
-  const countduplicateItems = function (itemId) {
-    
+  //* to get items count:
+  const getCartitemsCount = function (item_id) {
+    return cartItemList.items.filter((item) => item.id === item_id).length;
   };
 
+  //? item increment handler function
+  const itemIncrementhandler = function (item_id) {
+    cartItemList.increment(item_id);
+  };
+
+  //? item decrement handler function
+  const itemdecrement = function (item_id) {
+    cartItemList.decrement(item_id);
+  };
   return (
     <Fragment>
       <section className="cart-section">
@@ -74,7 +82,11 @@ const ShoppingCart = (props) => {
             <div className="item_price">
               <p>{cartItem.price} ₹</p>
             </div>
-            <InputQuantites countDup = {countduplicateItems} />
+            <div className="formDetails">
+              <button onClick={() => itemIncrementhandler(cartItem)}>+</button>
+              <input type="text" placeholder={getCartitemsCount(cartItem.id)} />
+              <button onClick={() => itemdecrement(cartItem.id)}>-</button>
+            </div>
             <div className="remove_button">
               <button
                 className="btn btn-danger"

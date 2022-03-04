@@ -13,8 +13,8 @@ const Bakery = (props) => {
 
   //* using cart context
   const cartCtxtConsumer = useContext(CartContext);
-  const addtoCart = function (item, quantity) {
-    cartCtxtConsumer.addItem(item, quantity);
+  const addtoCart = function (item) {
+    cartCtxtConsumer.addItem(item);
   };
 
   //* using wishlist context
@@ -54,7 +54,7 @@ const Bakery = (props) => {
             <div className="button__container">
               <button
                 className="button cart-button"
-                onClick={() => addtoCart(item, getCartitemsCount())}
+                onClick={() => addtoCart(item)}
                 style={{
                   position: "relative",
                 }}

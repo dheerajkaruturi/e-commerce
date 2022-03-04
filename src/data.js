@@ -14,7 +14,7 @@ import bread from "./assets/bakery-bread.jpg";
 import lays1 from "./assets/Lays-Masala-Chips.jpg";
 import lays2 from "./assets/lays-packet-potato-chips.jpg";
 import maggi from "./assets/maggi.jpg";
-import brownBread from './assets/brownBread.jpg'
+import brownBread from "./assets/brownBread.jpg";
 
 export const ITEMS_ARRAY = [
   {
@@ -39,6 +39,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 3,
@@ -62,6 +63,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 4,
@@ -85,6 +87,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 5,
@@ -108,6 +111,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 6,
@@ -131,6 +135,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 7,
@@ -154,6 +159,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 8,
@@ -177,6 +183,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 9,
@@ -200,6 +207,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 10,
@@ -223,6 +231,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 11,
@@ -269,6 +278,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 13,
@@ -292,6 +302,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 14,
@@ -315,6 +326,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 15,
@@ -338,6 +350,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 16,
@@ -361,6 +374,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 17,
@@ -384,6 +398,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 18,
@@ -407,6 +422,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 19,
@@ -430,6 +446,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
   {
     id: 20,
@@ -453,6 +470,7 @@ export const ITEMS_ARRAY = [
             perspiciatis temporibus, nobis, nemo modi quo perferendis autem
             expedita omnis, cumque dolorum necessitatibus repellat fuga
             consectetur!`,
+    quantity: 1,
   },
 ];
 
