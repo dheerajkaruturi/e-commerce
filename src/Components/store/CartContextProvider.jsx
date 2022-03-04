@@ -26,6 +26,7 @@ const CartContextProvider = (props) => {
     else if (action.type === "REMOVE_FROM_CART") {
       const currentStateItems = [...state.items];
 
+      //* to access the deleted item's property which is used to calculate the price.
       const item = currentStateItems.find((i) => {
         return i.id === action.id;
       });
@@ -41,12 +42,13 @@ const CartContextProvider = (props) => {
         .map((items) => items.id)
         .filter((requiredId) => requiredId === action.id);
 
+      //* price after deleting selected items.
       const updatedPriceafterRemovingItems =
-        state.totalPrice - (calc.length * item.price);
+        state.totalPrice - calc.length * item.price;
 
       return {
         items: filteredItems,
-        totalPrice: updatedPriceafterRemovingItems ,
+        totalPrice: updatedPriceafterRemovingItems,
       };
     }
     //! increment selected item.
