@@ -4,6 +4,7 @@ import CartContext from "../store/CartContext";
 import "./itemscategory.css";
 import { Link } from "react-router-dom";
 import { WishlistContext } from "../store/WishListContext";
+import useCountItem from "../Hooks/UseCountItems";
 
 const Beverages = () => {
   const data = useContext(DataContext).filter(
@@ -19,10 +20,9 @@ const Beverages = () => {
     wishlistCtx.addItem(item);
   };
 
-  //? to get items count:
-  const getCartitemsCount = function (item_id) {
-    return cartCtxtConsumer.items.filter((item) => item.id === item_id).length;
-  };
+  //*custom hook which returns count of items
+  const countItems = useCountItem();
+
   return (
     <Fragment>
       <div className="card-display__container">
@@ -58,10 +58,8 @@ const Beverages = () => {
                 <span>
                   <i className="ios ion-ios-cart"></i>{" "}
                 </span>
-                {getCartitemsCount(item.id) > 0 && (
-                  <span className="count_badge">
-                    {getCartitemsCount(item.id)}
-                  </span>
+                {countItems(item.id) > 0 && (
+                  <span className="count_badge">{countItems(item.id)}</span>
                 )}
               </button>
               <button

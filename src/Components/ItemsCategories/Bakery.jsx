@@ -4,6 +4,7 @@ import CartContext from "../store/CartContext";
 import { WishlistContext } from "../store/WishListContext";
 import "./itemscategory.css";
 import { Link } from "react-router-dom";
+import useCountItem from "../Hooks/UseCountItems";
 
 const Bakery = (props) => {
   //* using the context created in data.js
@@ -23,10 +24,7 @@ const Bakery = (props) => {
     wishlistCtxt.addItem(item);
   };
 
-  //* to get items count:
-  const getCartitemsCount = function (item_id) {
-    return cartCtxtConsumer.items.filter((item) => item.id === item_id).length;
-  };
+  const countItems = useCountItem();
 
   return (
     <Fragment>
@@ -62,10 +60,8 @@ const Bakery = (props) => {
                 Add to Cart
                 <span>
                   <i className="ios ion-ios-cart"></i>{" "}
-                  {getCartitemsCount(item.id) > 0 && (
-                    <span className="count_badge">
-                      {getCartitemsCount(item.id)}
-                    </span>
+                  {countItems(item.id) > 0 && (
+                    <span className="count_badge">{countItems(item.id)}</span>
                   )}
                 </span>
               </button>
