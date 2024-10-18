@@ -38,7 +38,7 @@ const Header = () => {
                   onChange={searchHandler}
                 />
               </div>
-              <button className="btn btn-primary">Search</button>
+              <button className="btn btn-primary">Searching</button>
             </div>
 
             {filtered.length > 0 && (
